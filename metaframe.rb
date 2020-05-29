@@ -12,6 +12,6 @@ class Metaframe < Formula
     system "make"
     bin.install "shell/metaframe"
     libexec.install Dir["dist"]
-    libexec.install Dir["bin/fzf"]
+    libexec.install Dir["fzf/bin/fzf"]
   end
 end
