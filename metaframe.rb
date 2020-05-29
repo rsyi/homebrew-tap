@@ -1,9 +1,9 @@
 class Metaframe < Formula
   desc "A command line tool to run ETL jobs and view metadata"
   homepage "https://github.com/rsyi/metaframe"
-  url "https://github.com/rsyi/metaframe/releases/download/v0.0.0a4/metaframe-mac.tar.gz"
-  sha256 "41b5730bd943b64755725013d881d3224b987d03fe9f11e9e19781c7a7cd5695"
-  version "v0.0.0a4"
+  url "https://github.com/rsyi/metaframe/releases/download/v0.0.0a5/metaframe-mac.tar.gz"
+  sha256 "0b716ab9a158240dc508a80307fe5d0a70c05192672f436b646236c6d05a1a66"
+  version "v0.0.0a5"
 
   depends_on "golang"
   depends_on "python"
