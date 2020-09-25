@@ -6,6 +6,7 @@ class Whale < Formula
   version "v0.0.0b0"
 
   depends_on "python"
+  depends_on "rust"
 
   def install
     system "make && make install && cp cli/target/release/whale cli/target/release/wh"
