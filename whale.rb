@@ -5,13 +5,13 @@ class Whale < Formula
   sha256 "374688e219374e765648c032d1bc336b6c470b00c27e95630df6af46cac77ebe"
   version "v0.0.0b7"
 
-  depends_on "python@3.8"
+  depends_on "python"
   depends_on "rust"
 
   def install
-    system "make"
+    system "make build_dir=./libexec"
     system "cp cli/target/release/whale cli/target/release/wh"
     bin.install "cli/target/release/wh"
-    libexec.install "build/*"
+    prefix.install Dir["libexec"]
   end
 end
