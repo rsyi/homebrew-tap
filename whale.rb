@@ -11,5 +11,6 @@ class Whale < Formula
   def install
     system "make && make install && cp cli/target/release/whale cli/target/release/wh"
     bin.install "cli/target/release/wh"
+    libexec.install Dir["dist"]
   end
 end
